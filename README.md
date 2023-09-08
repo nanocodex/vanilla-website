@@ -1,4 +1,4 @@
-# Welcome to my Github Pages repo!
+# Welcome to my Github Pages repository!
 <p>This site serves as a main page to provide a profile of myself and to connect all other static sites I make in the future in one place.</p>
 <p>Some examples of what I plan on making web pages for include:</p>
 
