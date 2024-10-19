@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working Root</title>
+    <script type="text/javascript">        
+        const workingRoot = "../../";
+        const dirCount = workingRoot.split("../").length;
+        const filePath = window.location.pathname;
+
+        function replaceFilePath() {
+            document.getElementById("filePath").innerHTML = filePath;
+        }
+
+        function replaceWorkingRootPath() {
+            let workingRootPath = filePath.split("/");
+
+            for (let i = 0; i < dirCount; i++) {
+                workingRootPath.pop();
+            }
+            workingRootPath = workingRootPath.toString().replaceAll(",", "/");
+
+            document.getElementById("workingRootPath").innerHTML = workingRootPath;
+        }
+
+        window.onload = function() {
+            replaceFilePath();
+            replaceWorkingRootPath();
+        }
+    </script>
+    <style>
+        span {
+            color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <p>The path of this file is <span id="filePath"></span></p>
+    <p>Meanwhile, the path of the working root is <span id="workingRootPath"></span></p>
+</body>
+</html>
