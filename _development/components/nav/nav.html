@@ -1,0 +1,45 @@
+<!-- 
+ Credits to Aleksandr Hovhannisyan for the navbar tutorial:
+ https://www.aleksandrhovhannisyan.com/blog/responsive-navbar-tutorial/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <header id="navbar">
+        <nav class="navbar-container container">
+            <a href="/" class="home-link">
+                <div class="navbar-logo"></div>
+                Website Name
+            </a>
+            <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle Menu" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div id="navbar-menu" aria-labelledby="navbar-toggle">
+                <ul class="navbar-links">
+                    <li class="navbar-item">
+                        <a href="/about.html" class="navbar-link">About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="/blog.html" class="navbar-link">Blog</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="/careers.html" class="navbar-link">Careers</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="/contact.html" class="navbar-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <script type="text/javascript" src="nav.js"></script>
+</body>
+</html>

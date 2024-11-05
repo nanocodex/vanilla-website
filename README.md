@@ -1,7 +1,9 @@
 # Base Website
-This repository serves as a template for creating a framework-less website using only:
+
+A vanilla portfolio & blog website made using only:
 1. HTML
 2. CSS
 3. Javascript
 
-I aim to make this site a simple personal, blog-style website for now.
+No frameworks are used in this website, but I have used some external libraries:
+1. Showdown[https://github.com/showdownjs/showdown] to convert markdown blog posts into HTML
