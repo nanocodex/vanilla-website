@@ -1,4 +1,8 @@
 /*
+    This script doesn't need to be used at all since "/" automatically refers to the root directory in this website,
+    but I'm keeping it here because I'm proud of what I made by myself >:D
+*/
+/*
     An analogy to describe what is happening:
     The name of the demon gets longer the farther you are from it.
     Call its name and it will find you.

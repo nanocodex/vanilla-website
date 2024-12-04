@@ -1,1 +1,23 @@
+# Generic website errors
 ErrorDocument 404 /404.html
+
+# Deny access to .htaccess
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>
+
+# Disable directory browsing 
+Options -Indexes
+
+# Deny access to filenames starting with dot(.)
+<FilesMatch "^\.">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+# Remove HTML file extension in site url
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC, L]
