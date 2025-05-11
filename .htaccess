@@ -16,6 +16,12 @@ Order allow,deny
 Deny from all
 </FilesMatch>
 
+# Deny access to filenames starting with underscore(_)
+<FilesMatch "^\_">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
 # Remove HTML file extension in site url
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
