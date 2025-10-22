@@ -1,0 +1,61 @@
+/* 
+    Root variables for base styling of a typical website.
+    These variables allow for easy theme swapping by changing the values in this file.
+*/
+
+:root {
+    /* === Colors === */
+    /* Primary and secondary colors for branding */
+    --primary-color: hsl(210, 100%, 50%);
+    --secondary-color: hsl(210, 100%, 90%);
+    
+    /* Background colors */
+    --background-color: hsl(0, 0%, 100%);
+    --background-contrast: hsl(0, 0%, 95%);
+    --card-background-color: hsl(0, 0%, 98%);
+
+    /* Text colors */
+    --text-color: hsl(0, 0%, 20%);
+    --text-color-muted: hsl(0, 0%, 40%);
+    --text-color-focus: hsl(0, 0%, 10%);
+    --link-color: hsl(210, 100%, 40%);
+    --link-hover-color: hsl(210, 100%, 30%);
+
+    /* Border and divider colors */
+    --border-color: hsl(0, 0%, 85%);
+    --divider-color: hsl(0, 0%, 90%);
+
+    /* Input and form colors */
+    --input-bg-color: hsl(0, 0%, 100%);
+    --input-border-color: hsl(0, 0%, 80%);
+    --input-focus-border-color: hsl(210, 100%, 40%);
+    --input-placeholder-color: hsl(0, 0%, 60%);
+
+    /* Button colors */
+    --button-bg-color: hsl(210, 100%, 50%);
+    --button-hover-bg-color: hsl(210, 100%, 40%);
+    --button-text-color: hsl(0, 0%, 100%);
+
+
+    /* === Typography === */
+    --font-family: 'Arial, sans-serif';
+    --font-size: 16px;
+    --line-height: 1.5;
+
+
+    /* === Spacing === */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+
+
+    /* === Borders and Shadows === */
+    --border-radius: 4px;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --focus-ring-color: hsl(210, 100%, 70%);
+
+    
+    /* === Miscellaneous === */
+    --transition-duration: 0.3s;
+    --transition-easing: ease-in-out;
+}

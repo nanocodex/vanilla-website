@@ -1,0 +1,50 @@
+/* Root variables for base styling */
+/* TODO: Research best practices when using CSS variables */
+
+:root {
+    /*** Colors ***/
+    /* Primary color: white */
+    --primary-color-hue: 0;
+    --primary-color-saturation: 0%;
+    --primary-color-lightness: 100%;
+    --primary-color: hsl(var(--primary-color-hue), var(--primary-color-saturation), var(--primary-color-lightness));
+
+    /* Secondary color: black */
+    --secondary-color-hue: 0;
+    --secondary-color-saturation: 0%;
+    --secondary-color-lightness: 0%;
+    --secondary-color: hsl(var(--secondary-color-hue), var(--secondary-color-saturation), var(--secondary-color-lightness));
+
+    --background-color: hsl(0, 0%, 100%);
+    --background-contrast: hsl(0, 0%, 85%);
+    --text-color: hsl(0, 0%, 35%);
+    --text-color-focus: hsl(0, 0%, 0%);
+
+    /*** Typography ***/
+    --font-family: 'Arial, sans-serif';
+    --font-size: 16px;
+
+    /*** Spacing ***/
+    --line-height: 1.5;
+    --border-radius: 4px;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    nav {
+        --nav-height: 60px;
+        --nav-background-color: var(--primary-color);
+        --nav-text-color: var(--text-color);
+    }
+
+    footer {
+        --footer-background-color: var(--secondary-color);
+        --footer-text-color: var(--text-color-focus);
+    }
+
+    button {
+        /* Informative colors for button status */
+        --info-color: hsl(210, 100%, 50%);
+        --success-color: hsl(120, 100%, 25%);
+        --warning-color: hsl(45, 100%, 50%);
+        --error-color: hsl(0, 100%, 50%);        
+    }
+}

@@ -1,0 +1,59 @@
+<!-- File extension intentionally obscured to determine whether browser renders HTML based on file extension -->
+<!-- Conclusion: Browser will render HTML correctly regardless of file extension -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple HTML document.</p>
+    <a href="https://www.example.com">Visit Example.com</a>
+    <p>Here is a <strong>bold</strong> statement and an <em>italicized</em> word.</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <p>For more information, check out the <a href="https://www.w3.org/">W3C website</a>.</p>
+    <footer>
+        <p>&copy; 2023 My Website</p>
+    </footer>
+    <script>
+        console.log("This is a simple script running in the background.");
+        document.querySelector('h1').style.color = 'blue';
+        document.querySelector('p').style.fontSize = '18px';
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: darkblue;
+        }
+        a {
+            color: green;
+        }
+        ul {
+            list-style-type: square;
+        }
+    </style>
+    <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+    <p>Enjoy exploring the content!</p>
+    <div>
+        <h2>Additional Resources</h2>
+        <p>Check out these links for more information:</p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+            <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+            <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a></li>
+        </ul>
+    </div>
+    <p>Feel free to reach out via <a href="mailto:info@example.com">email</a>.</p>
+</body>
+</html>

@@ -1,0 +1,73 @@
+{
+    "socials": {
+        "informal": [
+            {
+                "platform": "Twitter",
+                "url": "https://twitter.com/yourprofile",
+                "activity": "none",
+                "logo": "/assets/images/logo.png"
+            },
+            {
+                "platform": "Discord",
+                "url": "https://discord.com/yourprofile",
+                "activity": "medium",
+                "logo": "/assets/images/logo.png"
+            },
+            {
+                "platform": "Instagram",
+                "url": "https://instagram.com/yourprofile",
+                "activity": "highest",
+                "logo": "/assets/images/logo.png"
+            },
+            {
+                "platform": "Reddit",
+                "url": "https://reddit.com/yourprofile",
+                "activity": "high",
+                "logo": "/assets/images/logo.png"
+            },
+            {
+                "platform": "RSS Feed",
+                "url": "/feed.xml",
+                "activity": "low",
+                "logo": "/assets/images/rss.png"
+            }
+        ],
+        "formal": [
+            {
+                "platform": "Whatsapp",
+                "url": "https://wa.me/yourphonenumber",
+                "activity": "highest",
+                "logo": "/assets/images/logo.png"
+            },
+            {
+                "platform": "Email",
+                "url": "mailto:youremail@example.com",
+                "logo": "/assets/images/logo.png"
+            },
+            {
+                "platform": "GitHub",
+                "url": "https://github.com/yourprofile",
+                "activity": "high",
+                "logo": "/assets/images/logo.png"
+            },
+            {
+                "platform": "LinkedIn",
+                "url": "https://linkedin.com/in/yourprofile",
+                "activity": "medium",
+                "logo": "/assets/images/logo.png"
+            },
+            {
+                "platform": "Slack",
+                "url": "https://slack.com/yourprofile",
+                "activity": "none",
+                "logo": "/assets/images/logo.png"
+            },
+            {
+                "platform": "Gitter",
+                "url": "https://gitter.im/yourprofile",
+                "activity": "none",
+                "logo": "/assets/images/logo.png"
+            }
+        ]
+    }
+}

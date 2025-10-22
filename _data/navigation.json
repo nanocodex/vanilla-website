@@ -1,0 +1,31 @@
+{
+    "home": {
+        "title": "Home",
+        "url": "/",
+        "logo": "/assets/images/logo.png"
+    },
+    "primary": [
+        {
+            "title": "About",
+            "url": "/about"
+        },
+        {
+            "title": "Contact",
+            "url": "/contact"
+        },
+        {
+            "title": "Projects",
+            "url": "/projects"
+        }
+    ],
+    "secondary": [
+        {
+            "title": "Blog",
+            "url": "/blog"
+        },
+        {
+            "title": "Sitemap",
+            "url": "/sitemap"
+        }
+    ]
+}

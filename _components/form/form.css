@@ -1,0 +1,38 @@
+label, input, select, textarea {
+    display: block;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+
+    &:is(:focus, :hover) {
+        background-color: #0056b3;
+    }
+
+    &:not(:last-child) {
+        margin-right: 0.5em;
+    }
+}
+
+input + label {
+    margin-top: 1em;
+}
+
+input[type="radio"] + label, input[type="checkbox"] + label {
+    display: inline-block;
+    margin-right: 1em;
+}

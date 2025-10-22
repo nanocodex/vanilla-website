@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Rendering</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+
+<body>
+    <!-- 
+        Context: This form is made for scheduling a progress check in a software development team.
+    -->
+    <h1>HTML5 Form Elements Demo</h1>
+    <form action="submit.html" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Progress Check</legend>
+
+            <label for="username">Staff Username</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="email">Staff Email</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="phone-no">Phone Number</label>
+            <input type="tel" id="phoneNo" name="phone-no"><br>
+
+            <label for="production">Production URL</label>
+            <input type="url" id="production" name="production"><br>
+
+            <label for="features">Completed Features</label>
+            <input type="number" id="features" name="features" min="1" max="12" value="1"><br>
+
+            <label for="priority">Priority</label>
+            <input type="range" id="priority" name="priority" min="1" max="4"
+                oninput="priorityOrder.value = this.max - this.value + 1">
+            <output name="priority-order" id="priorityOrder" for="features"></output><br><br>
+
+            <label for="deadline">Project Deadline</label>
+            <input type="date" id="deadline" name="deadline"><br>
+
+            <label for="appointment">Meeting Appointment</label>
+            <input type="datetime-local" id="appointment" name="appointment"><br>
+
+            <label for="release-month">Release Month</label>
+            <input type="month" id="release-month" name="release-month"><br>
+
+            <label for="review-week">Review Week</label>
+            <input type="week" id="review-week" name="review-week"><br>
+
+            <label for="preferred-time">Preferred Meeting Time</label>
+            <input type="time" id="preferred-time" name="preferred-time"><br>
+
+            <label for="team-colour">Team Colour</label>
+            <input type="color" id="team-colour" name="team-colour"><br>
+
+            <label for="test-data">Test Data</label>
+            <input type="file" id="test-data" name="test-data"><br>
+
+            <label>Type of Progress Check</label>
+            <input type="radio" id="code-review" name="progress-check-type" value="code-review">
+            <label for="code-review">Code Review</label><br>
+            <input type="radio" id="qa-testing" name="progress-check-type" value="qa-testing">
+            <label for="qa-testing">QA Testing</label><br>
+            <input type="radio" id="deployment-review" name="progress-check-type" value="deployment-review">
+            <label for="deployment-review">Deployment Review</label><br><br>
+
+            <label>Areas of Focus:</label>
+            <input type="checkbox" id="frontend" name="focus-areas" value="frontend">
+            <label for="frontend">Frontend Development</label><br>
+            <input type="checkbox" id="backend" name="focus-areas" value="backend">
+            <label for="backend">Backend Development</label><br>
+            <input type="checkbox" id="testing" name="focus-areas" value="testing">
+            <label for="testing">Testing</label><br>
+            <input type="checkbox" id="deployment" name="focus-areas" value="deployment">
+            <label for="deployment">Deployment</label><br><br>
+
+            <label for="country">Deployment Region</label>
+            <select id="country" name="country" required>
+                <option value="">Select...</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+            </select><br>
+
+            <label for="bio">Member Roles</label>
+            <textarea id="bio" name="bio" rows="3" cols="30"></textarea><br>
+
+            <label for="client-focus">Client Focus</label>
+            <input list="sector" type="search" id="client-focus" name="client-focus" placeholder="Select or type a sector" autocomplete="off" required>
+            <datalist id="sector">
+                <option value="Regular Users">
+                <option value="Advertisers">
+                <option value="Stakeholders">
+                <option value="Investors">
+                <option value="External Developers">
+            </datalist><br>
+
+            <input type="hidden" name="session-id" value="00000000-0000-0000-0000-000000000000">
+
+            <input type="reset" value="Reset">
+            <input type="button" value="Preview" onclick="alert('Preview not implemented')">
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>
